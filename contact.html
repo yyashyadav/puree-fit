@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+          <div class="navbar-left">
+              <a href="/">
+                  <img src="./images/healthy-lifestyle-logo.png" alt="">
+                  <div class="logo">PureFit</div>
+              </a>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/index.html">Blogs</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="images/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          
+
+          <div class="info">
+              <img src="./images/main2.png" alt="">
+          </div>
+
+          <!-- <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div>
+              <input type="hidden" name="access_key" value="ebaa1667-1fce-4f31-9aa4-43ef0b483c72">
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <!-- <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div> -->
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
