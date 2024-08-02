@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 100px;
+    background-color: white;
+}
+
+.about-image-right img,
+.about-image-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content-left, 
+.about-content-right {
+    max-width: 600px;
+}
+
+.about-content-left h1,
+.about-content-right h1 {
+    font-size: 36px;
+    color: #089044;
+    margin-bottom: 20px;
+}
+
+.about-content-left p,
+.about-content-right p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-image-left {
+    order: 1;
+    margin-right: 40px;
+}
+
+.about-image-right {
+    order: 2;
+    margin-left: 40px;
+}
+
+.about-content-left {
+    order: 2;
+}
+
+.about-content-right {
+    order: 1;
+}
+
+.about-team {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e8f5e9;
+    
+}
+
+.about-team h2 {
+    font-size: 30px;
+    color: #089044;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team-member {
+    max-width: 250px;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 22px;
+    color: #089044;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .about-image-right, 
+    .about-image-left,
+    .about-content-left,
+    .about-content-right {
+        margin: 0;
+    }
+
+    .about-image-left, 
+    .about-content-left, 
+    .about-image-right,
+    .about-content-right {
+        order: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about-content-left h1,
+    .about-content-right h1 {
+        font-size: 28px;
+    }
+
+    .about-content-left p,
+    .about-content-right p {
+        font-size: 16px;
+    }
+
+    .team-member {
+        max-width: 100%;
+    }
+}
